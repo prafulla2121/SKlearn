@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SkillLearn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dashboard-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">
+                <a href="index.html">SkillLearn</a>
+            </div>
+        </div>
+        
+        <div class="user-profile">
+            <div class="user-avatar">👨‍💼</div>
+            <div class="user-info">
+                <h3 class="user-name">Alex Johnson</h3>
+                <p class="user-role">Premium Student</p>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link active">
+                        <span class="nav-icon">📊</span>
+                        <span class="nav-text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text">My Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">🎯</span>
+                        <span class="nav-text">Progress</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">🏆</span>
+                        <span class="nav-text">Certificates</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <span class="nav-icon">👤</span>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="sidebar-footer">
+            <a href="index.html" class="logout-btn">
+                <span class="nav-icon">↩️</span>
+                <span class="nav-text">Logout</span>
+            </a>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-content">
+                <div class="welcome-section">
+                    <h1 class="welcome-title">Welcome back, Alex! 👋</h1>
+                    <p class="welcome-subtitle">Continue your learning journey and achieve your goals</p>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn">
+                        <span class="btn-icon">🔔</span>
+                    </button>
+                    <button class="action-btn">
+                        <span class="btn-icon">⚙️</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="stats-grid">
+                <div class="stat-card" data-stat="total-courses">
+                    <div class="stat-icon">📚</div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Enrolled Courses</p>
+                    </div>
+                    <div class="stat-trend positive">+2 this month</div>
+                </div>
+                <div class="stat-card" data-stat="completed">
+                    <div class="stat-icon">✅</div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Completed</p>
+                    </div>
+                    <div class="stat-trend positive">+3 this month</div>
+                </div>
+                <div class="stat-card" data-stat="learning-time">
+                    <div class="stat-icon">⏰</div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0h</h3>
+                        <p class="stat-label">Learning Time</p>
+                    </div>
+                    <div class="stat-trend positive">+12h this week</div>
+                </div>
+                <div class="stat-card" data-stat="certificates">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-content">
+                        <h3 class="stat-number">0</h3>
+                        <p class="stat-label">Certificates</p>
+                    </div>
+                    <div class="stat-trend positive">+1 this month</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Current Courses Section -->
+        <section class="courses-section">
+            <div class="section-header">
+                <h2 class="section-title">Continue Learning</h2>
+                <a href="#" class="view-all-link">View All Courses</a>
+            </div>
+            
+            <div class="dashboard-courses-grid">
+                <!-- Courses will be loaded dynamically -->
+            </div>
+        </section>
+
+        <!-- Recent Activity Section -->
+        <section class="activity-section">
+            <h2 class="section-title">Recent Activity</h2>
+            <div class="activity-list">
+                <!-- Activity will be loaded dynamically -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Include JavaScript files -->
+    <script src="/public/js/auth.js"></script>
+    <script src="/public/js/dashboard.js"></script>
+</body>
+</html>

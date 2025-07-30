@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillLearn - Upgrade Your Skills Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">SkillLearn</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/login" class="nav-link login-btn">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Upgrade Your Skills Online</h1>
+                <p class="hero-subtitle">Learn from top instructors anytime, anywhere. Join thousands of students advancing their careers with our expert-led courses.</p>
+                <a href="#courses" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-icon">📚</div>
+                    <h3>1000+</h3>
+                    <p>Courses Available</p>
+                </div>
+                <div class="floating-card delay-1">
+                    <div class="card-icon">👨‍🎓</div>
+                    <h3>50K+</h3>
+                    <p>Students Enrolled</p>
+                </div>
+                <div class="floating-card delay-2">
+                    <div class="card-icon">⭐</div>
+                    <h3>4.9/5</h3>
+                    <p>Average Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Courses</h2>
+                <p class="section-subtitle">Master in-demand skills with our most popular courses</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Development</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Full Stack Web Development</h3>
+                        <p class="course-description">Master modern web development with React, Node.js, and MongoDB. Build real-world applications from scratch.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">12 weeks</span>
+                            <span class="course-level">Intermediate</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$89</span>
+                            <button class="enroll-btn" onclick="courseManager.enrollInCourse('1')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Design</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">UI/UX Design Masterclass</h3>
+                        <p class="course-description">Learn design thinking, prototyping, and user research. Create stunning interfaces that users love.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">8 weeks</span>
+                            <span class="course-level">Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$69</span>
+                            <button class="enroll-btn" onclick="courseManager.enrollInCourse('2')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Data Science</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Python for Data Science</h3>
+                        <p class="course-description">Dive into data analysis, visualization, and machine learning with Python, pandas, and scikit-learn.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">10 weeks</span>
+                            <span class="course-level">Intermediate</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$99</span>
+                            <button class="enroll-btn" onclick="courseManager.enrollInCourse('3')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-category">Business</div>
+                        <div class="course-thumbnail" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+                    </div>
+                    <div class="course-content">
+                        <h3 class="course-title">Digital Marketing Strategy</h3>
+                        <p class="course-description">Master SEO, social media marketing, and content strategy to grow your business online.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">6 weeks</span>
+                            <span class="course-level">Beginner</span>
+                        </div>
+                        <div class="course-footer">
+                            <span class="course-price">$59</span>
+                            <button class="enroll-btn" onclick="courseManager.enrollInCourse('4')">Enroll Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="about-title">Why Choose SkillLearn?</h2>
+                    <p class="about-description">We're dedicated to providing high-quality, practical education that prepares you for real-world challenges. Our courses are designed by industry experts and updated regularly to reflect current trends and technologies.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">🎯</div>
+                            <div class="feature-content">
+                                <h4>Expert Instructors</h4>
+                                <p>Learn from industry professionals with years of experience</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🚀</div>
+                            <div class="feature-content">
+                                <h4>Hands-on Projects</h4>
+                                <p>Build real-world projects to showcase your skills</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🏆</div>
+                            <div class="feature-content">
+                                <h4>Certificates</h4>
+                                <p>Earn recognized certificates upon course completion</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>50,000+</h3>
+                            <p>Students</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>1,000+</h3>
+                            <p>Courses</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>95%</h3>
+                            <p>Success Rate</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <a href="index.html">SkillLearn</a>
+                    </div>
+                    <p class="footer-description">Empowering learners worldwide with quality education and practical skills for the future.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">📧</a>
+                        <a href="#" class="social-link">💼</a>
+                        <a href="#" class="social-link">🐙</a>
+                        <a href="#" class="social-link">🐦</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="/login">Login</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Data Science</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SkillLearn. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Include JavaScript files -->
+    <script src="/public/js/auth.js"></script>
+    <script src="/public/js/courses.js"></script>
+</body>
+</html>
